@@ -1,0 +1,13 @@
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+local head = char.Head
+
+local fakemajinmsymbolhead = game:GetObjects('rbxassetid://11219491049')[1]
+fakemajinmsymbolhead.Parent = head
+
+local fakemajinmsymbolheadweld = Instance.new("Weld")
+fakemajinmsymbolheadweld.Part0 = fakemajinmsymbolhead
+fakemajinmsymbolheadweld.Part1 = head
+fakemajinmsymbolheadweld.C0 = head.CFrame
+fakemajinmsymbolheadweld.C1 = head.CFrame
+fakemajinmsymbolheadweld.Parent = head
